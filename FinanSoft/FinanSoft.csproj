@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0FD4BC92-9882-4830-9ABD-DF9611B20369}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FinanSoft</RootNamespace>
+    <AssemblyName>FinanSoft</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.10.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.10.9\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.10.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entity.6.10.9\lib\net452\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms_Clientes\Wf_Estados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Clientes\Wf_Estados.Designer.cs">
+      <DependentUpon>Wf_Estados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Clientes\Wf_GrupoSocios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Clientes\Wf_GrupoSocios.Designer.cs">
+      <DependentUpon>Wf_GrupoSocios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Clientes\Wf_ClienteLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Clientes\Wf_ClienteLista.Designer.cs">
+      <DependentUpon>Wf_ClienteLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Clientes\Wf_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Clientes\Wf_Clientes.Designer.cs">
+      <DependentUpon>Wf_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Clientes\Wf_MarMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Clientes\Wf_MarMod.Designer.cs">
+      <DependentUpon>Wf_MarMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Clientes\Wf_MarModLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Clientes\Wf_MarModLista.Designer.cs">
+      <DependentUpon>Wf_MarModLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Clientes\Modelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Clientes\Modelos.Designer.cs">
+      <DependentUpon>Modelos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Clientes\Wf_Modelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Clientes\Wf_Modelos.Designer.cs">
+      <DependentUpon>Wf_Modelos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Clientes\Wf_Paises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Clientes\Wf_Paises.Designer.cs">
+      <DependentUpon>Wf_Paises.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Clientes\WF_TipoArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Clientes\WF_TipoArticulos.Designer.cs">
+      <DependentUpon>WF_TipoArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Clientes\Wf_TiposSocios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Clientes\Wf_TiposSocios.Designer.cs">
+      <DependentUpon>Wf_TiposSocios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910211803475_firstSetup.cs" />
+    <Compile Include="Migrations\201910211803475_firstSetup.Designer.cs">
+      <DependentUpon>201910211803475_firstSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Clientes\ArticuloCliente.cs" />
+    <Compile Include="Models\Clientes\Contacto.cs" />
+    <Compile Include="Models\Clientes\Direccion.cs" />
+    <Compile Include="Models\Clientes\Estado.cs" />
+    <Compile Include="Models\Clientes\GrupoSocio.cs" />
+    <Compile Include="Models\Clientes\Pais.cs" />
+    <Compile Include="Models\Clientes\Socio.cs" />
+    <Compile Include="Models\Clientes\Fabricante.cs" />
+    <Compile Include="Models\Clientes\Marca.cs" />
+    <Compile Include="Models\Clientes\Modelo.cs" />
+    <Compile Include="Models\Clientes\TipoArticulo.cs" />
+    <Compile Include="Models\Clientes\TiposSocio.cs" />
+    <Compile Include="Models\Core\Empleado.cs" />
+    <Compile Include="Models\DB_Context.cs" />
+    <Compile Include="Wf_InicioSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wf_InicioSesion.Designer.cs">
+      <DependentUpon>Wf_InicioSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Core\Persona.cs" />
+    <Compile Include="Models\Seguridad\Usuario.cs" />
+    <Compile Include="Forms_Clientes\WF_Marcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Clientes\WF_Marcas.Designer.cs">
+      <DependentUpon>WF_Marcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wf_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wf_Principal.Designer.cs">
+      <DependentUpon>Wf_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms_Clientes\Wf_Estados.resx">
+      <DependentUpon>Wf_Estados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Clientes\Wf_GrupoSocios.resx">
+      <DependentUpon>Wf_GrupoSocios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Clientes\Wf_ClienteLista.resx">
+      <DependentUpon>Wf_ClienteLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Clientes\Wf_Clientes.resx">
+      <DependentUpon>Wf_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Clientes\Wf_MarMod.resx">
+      <DependentUpon>Wf_MarMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Clientes\Wf_MarModLista.resx">
+      <DependentUpon>Wf_MarModLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Clientes\Modelos.resx">
+      <DependentUpon>Modelos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Clientes\Wf_Modelos.resx">
+      <DependentUpon>Wf_Modelos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Clientes\Wf_Paises.resx">
+      <DependentUpon>Wf_Paises.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Clientes\WF_TipoArticulos.resx">
+      <DependentUpon>WF_TipoArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Clientes\Wf_TiposSocios.resx">
+      <DependentUpon>Wf_TiposSocios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910211803475_firstSetup.resx">
+      <DependentUpon>201910211803475_firstSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wf_InicioSesion.resx">
+      <DependentUpon>Wf_InicioSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Clientes\WF_Marcas.resx">
+      <DependentUpon>WF_Marcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wf_Principal.resx">
+      <DependentUpon>Wf_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
