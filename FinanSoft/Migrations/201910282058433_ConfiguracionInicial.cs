@@ -3,7 +3,7 @@ namespace FinanSoft.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class firstSetup : DbMigration
+    public partial class ConfiguracionInicial : DbMigration
     {
         public override void Up()
         {
@@ -210,8 +210,8 @@ namespace FinanSoft.Migrations
             DropForeignKey("dbo.Socios", "GrupoClientes_Id", "dbo.GrupoSocios");
             DropForeignKey("dbo.Direcciones", "Socios_Id_Socio", "dbo.Socios");
             DropForeignKey("dbo.Direcciones", "Pais_Id_Pais", "dbo.Paises");
-            DropForeignKey("dbo.Estados", "Pais_Id_Pais", "dbo.Paises");
             DropForeignKey("dbo.Direcciones", "Estado_Id_Estado", "dbo.Estados");
+            DropForeignKey("dbo.Estados", "Pais_Id_Pais", "dbo.Paises");
             DropForeignKey("dbo.Contactos", "Socios_Id_Socio", "dbo.Socios");
             DropForeignKey("dbo.ArticulosCliente", "Cliente_Id_Socio", "dbo.Socios");
             DropIndex("dbo.Modelos", new[] { "Marca_Id_Marca" });
