@@ -8,6 +8,7 @@ using FinanSoft.Models.Core;
 using FinanSoft.Models.Seguridad;
 using MySql.Data.Entity;
 using FinanSoft.Models.Clientes;
+using FinanSoft.Models.Inventario;
 
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -37,6 +38,7 @@ namespace FinanSoft
         public DbSet<Modelo> Modelos { get; set; }
         public DbSet<Pais> Paises{ get;  set; }
         public DbSet<Estado> Estados { get; set; }
+        public DbSet<Articulo> Articulos { get; set; }
         
        
         

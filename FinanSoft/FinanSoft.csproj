@@ -142,9 +142,19 @@
     <Compile Include="Forms_Clientes\Wf_TiposSocios.Designer.cs">
       <DependentUpon>Wf_TiposSocios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201910211803475_firstSetup.cs" />
-    <Compile Include="Migrations\201910211803475_firstSetup.Designer.cs">
-      <DependentUpon>201910211803475_firstSetup.cs</DependentUpon>
+    <Compile Include="Forms_Inventario\Wf_Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Inventario\Wf_Inventario.Designer.cs">
+      <DependentUpon>Wf_Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910282058433_ConfiguracionInicial.cs" />
+    <Compile Include="Migrations\201910282058433_ConfiguracionInicial.Designer.cs">
+      <DependentUpon>201910282058433_ConfiguracionInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910282154531_adicionArticulo.cs" />
+    <Compile Include="Migrations\201910282154531_adicionArticulo.Designer.cs">
+      <DependentUpon>201910282154531_adicionArticulo.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Clientes\ArticuloCliente.cs" />
@@ -161,6 +171,7 @@
     <Compile Include="Models\Clientes\TiposSocio.cs" />
     <Compile Include="Models\Core\Empleado.cs" />
     <Compile Include="Models\DB_Context.cs" />
+    <Compile Include="Models\Inventario\Articulo.cs" />
     <Compile Include="Wf_InicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,8 +230,14 @@
     <EmbeddedResource Include="Forms_Clientes\Wf_TiposSocios.resx">
       <DependentUpon>Wf_TiposSocios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910211803475_firstSetup.resx">
-      <DependentUpon>201910211803475_firstSetup.cs</DependentUpon>
+    <EmbeddedResource Include="Forms_Inventario\Wf_Inventario.resx">
+      <DependentUpon>Wf_Inventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910282058433_ConfiguracionInicial.resx">
+      <DependentUpon>201910282058433_ConfiguracionInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910282154531_adicionArticulo.resx">
+      <DependentUpon>201910282154531_adicionArticulo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Wf_InicioSesion.resx">
       <DependentUpon>Wf_InicioSesion.cs</DependentUpon>
