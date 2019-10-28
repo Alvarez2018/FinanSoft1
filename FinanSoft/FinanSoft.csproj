@@ -76,6 +76,12 @@
     <Compile Include="Forms_Clientes\Wf_Estados.Designer.cs">
       <DependentUpon>Wf_Estados.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms_Clientes\Wf_form1PruebaLuis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Clientes\Wf_form1PruebaLuis.Designer.cs">
+      <DependentUpon>Wf_form1PruebaLuis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms_Clientes\Wf_GrupoSocios.cs">
       <SubType>Form</SubType>
     </Compile>
