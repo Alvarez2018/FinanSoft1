@@ -186,6 +186,9 @@
     <EmbeddedResource Include="Forms_Clientes\Wf_Estados.resx">
       <DependentUpon>Wf_Estados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Clientes\Wf_form1PruebaLuis.resx">
+      <DependentUpon>Wf_form1PruebaLuis.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms_Clientes\Wf_GrupoSocios.resx">
       <DependentUpon>Wf_GrupoSocios.cs</DependentUpon>
     </EmbeddedResource>
